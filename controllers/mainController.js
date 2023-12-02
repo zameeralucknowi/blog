@@ -49,7 +49,7 @@ exports.getAbout = (req, res, next) => {
     }
 
 
-    res.render('about', { locals, layout: adminLayout });
+    res.render('about', { locals });
 }
 
 
@@ -59,7 +59,7 @@ exports.getContact = (req, res, next) => {
         title: "Contact",
         description: " blog website built using node.js express and mongoDb"
     }
-    res.render('contact', { locals, layout: adminLayout });
+    res.render('contact', { locals });
 }
 
 
